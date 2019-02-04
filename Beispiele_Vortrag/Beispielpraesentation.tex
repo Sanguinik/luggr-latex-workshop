@@ -1,0 +1,85 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usetheme{Berlin}
+
+\author{Ich Ichson}
+\title{Ein Beispiel}
+\subtitle{Ein Untertitel}
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+\section{Einführung}
+
+\subsection{Ein Unterabschnitt}
+
+\begin{frame}{Folienname}{Beispiel}
+Hallo
+
+\begin{itemize}
+\item Beispiel
+\item Beispiel 2
+\item Beispiel 3
+\end{itemize}
+
+
+Themes auf:
+\url{http://deic.uab.es/~iblanes/beamer_gallery/}
+
+\end{frame}
+
+\begin{frame}{Ein Titel}
+
+Eine inhaltsleere Folie
+
+\end{frame}
+
+\begin{frame}{Ein anderer Titel}
+
+Leider kein Inhalt.
+
+\end{frame}
+
+\section{Beispiele}
+
+\begin{frame}{Titel}
+
+ Spaß mit Overlays!\dots
+  \begin{itemize}
+  \item Mit Hilfe des \texttt{pause}-Kommandos:
+    \begin{itemize}
+    \item Zuerst.
+      \pause 
+    \item Zweites.
+    \end{itemize}
+  \item
+    Das Overlay spezifizieren:
+    \begin{itemize}
+    \item<3->
+      Ich bin beim 3. Klick da.
+    \item<4-5>
+      Als 4 bis zum 5., dann nicht mehr.
+    \end{itemize}
+  \item
+    Das \texttt{uncover}-Kommando:
+    \begin{itemize}
+      \uncover<5->{\item
+        Klick 5.}
+      \uncover<6->{\item
+        Klick Nummer 6.}
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\end{document}
